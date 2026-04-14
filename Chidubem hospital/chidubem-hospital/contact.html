@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Chidubem Hospital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="logo-icon">🏥</div>
+        <div class="logo-text">
+          <h1>Chidubem Hospital</h1>
+          <span>Pediatric Care Center</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="dashboard/login.html" class="btn btn-primary">Staff Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>We're here to help with all your pediatric healthcare needs</p>
+  </section>
+
+  <section class="section">
+    <div class="slideshow-container" id="contactSlideshow" style="margin-bottom: 4rem;">
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1200&q=80" alt="Hospital building" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Our Location</h3>
+          <p>Find us easily at our modern healthcare facility</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'contactSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'contactSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80" alt="Caring staff" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Always Here for You</h3>
+          <p>Our friendly staff is ready to assist you anytime</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'contactSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'contactSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?w=1200&q=80" alt="Mother and child" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>We Love Hearing From You</h3>
+          <p>Your questions and feedback help us serve you better</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'contactSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'contactSlideshow')">❯</button>
+      </div>
+      <div class="slide-dots">
+        <span class="dot active" onclick="goToSlide(0, 'contactSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(1, 'contactSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(2, 'contactSlideshow')"></span>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info animate-fade">
+        <h2 style="margin-bottom: 2rem; font-size: 1.8rem;">Get in Touch</h2>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Our Address</h4>
+            <p>123 Healthcare Avenue<br>Springfield, ST 12345</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone Number</h4>
+            <p>Main: (555) 123-4567<br>Emergency: (555) 123-9999</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email Address</h4>
+            <p>info@chidubemhospital.com<br>appointments@chidubemhospital.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday - Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 5:00 PM<br>Sunday: Emergency Services Only</p>
+          </div>
+        </div>
+        
+        <div style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-light); border-radius: var(--radius);">
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">🆘 Emergency?</h4>
+          <p>If your child is experiencing a medical emergency, please call our 24/7 emergency line immediately: <strong>(555) 123-9999</strong></p>
+        </div>
+      </div>
+
+      <div class="contact-form animate-slide">
+        <h2 style="margin-bottom: 2rem; font-size: 1.8rem;">Send us a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Parent/Guardian Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry or concern..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="section-title">
+      <h2>Find Us</h2>
+      <p>Visit us at our location</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-card" style="height: 300px;">
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=600&q=80" alt="Hospital" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="gallery-overlay">
+          <h4>Hospital Exterior</h4>
+        </div>
+      </div>
+      <div class="gallery-card" style="height: 300px;">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80" alt="Caring" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="gallery-overlay">
+          <h4>Friendly Staff</h4>
+        </div>
+      </div>
+      <div class="gallery-card" style="height: 300px;">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80" alt="Facility" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="gallery-overlay">
+          <h4>Modern Facility</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="section-title">
+      <h2>What Happens Next?</h2>
+      <p>After you contact us</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">📩</div>
+        <h3>We Receive Your Message</h3>
+        <p>Our team reviews your inquiry promptly.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📞</div>
+        <h3>We Contact You</h3>
+        <p>We'll call or email within 24 hours.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📅</div>
+        <h3>Schedule Appointment</h3>
+        <p>We'll find a convenient time for your visit.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">😊</div>
+        <h3>Welcome!</h3>
+        <p>Experience our warm, caring service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Prefer to Call?</h2>
+    <p>Our friendly staff is ready to assist you with appointments and inquiries.</p>
+    <a href="tel:5551234567" class="btn btn-primary" style="background: white; color: var(--primary);">Call (555) 123-4567</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Chidubem Hospital</h3>
+        <p>Providing exceptional pediatric healthcare since 2010.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 123 Healthcare Avenue, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ info@chidubemhospital.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hours</h3>
+        <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
+        <p>Sat: 9:00 AM - 5:00 PM</p>
+        <p>Sun: Emergency Only</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Chidubem Hospital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initSlideshows();
+      
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        showNotification('Thank you! Your message has been sent successfully.');
+        this.reset();
+      });
+    });
+  </script>
+</body>
+</html>

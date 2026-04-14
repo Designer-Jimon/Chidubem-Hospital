@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Login - Chidubem Hospital</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box animate-fade">
+      <div style="margin-bottom: 1.5rem;">
+        <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 2rem;">🏥</div>
+      </div>
+      <h1>Chidubem Hospital</h1>
+      <p>Staff Portal Login</p>
+      
+      <div class="login-error" id="loginError">
+        Invalid username or password. Please try again.
+      </div>
+      
+      <form id="loginForm" style="text-align: left;">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Login</button>
+      </form>
+      
+      <div style="margin-top: 2rem; padding: 1rem; background: var(--bg-light); border-radius: var(--radius-sm); font-size: 0.9rem;">
+        <p style="color: var(--text-light); text-align: center;">
+          <strong>Demo Credentials:</strong><br>
+          Username: <code>chidubem</code><br>
+          Password: <code>chidubem</code>
+        </p>
+      </div>
+      
+      <a href="../index.html" style="display: inline-block; margin-top: 1.5rem; color: var(--primary);">← Back to Website</a>
+    </div>
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      if (username === 'chidubem' && password === 'chidubem') {
+        sessionStorage.setItem('chidubem_logged_in', 'true');
+        showNotification('Login successful!');
+        setTimeout(() => window.location.href = '../dashboard.html', 800);
+      } else {
+        document.getElementById('loginError').style.display = 'block';
+        document.getElementById('username').style.borderColor = '#f44336';
+        document.getElementById('password').style.borderColor = '#f44336';
+      }
+    });
+    
+    ['username', 'password'].forEach(id => {
+      document.getElementById(id).addEventListener('input', function() {
+        document.getElementById('loginError').style.display = 'none';
+        this.style.borderColor = 'var(--border)';
+      });
+    });
+  </script>
+</body>
+</html>

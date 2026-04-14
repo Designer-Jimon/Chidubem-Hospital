@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Chidubem Hospital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="logo-icon">🏥</div>
+        <div class="logo-text">
+          <h1>Chidubem Hospital</h1>
+          <span>Pediatric Care Center</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard/login.html" class="btn btn-primary">Staff Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>About Chidubem Hospital</h1>
+    <p>Dedicated to providing exceptional pediatric healthcare</p>
+  </section>
+
+  <section class="section">
+    <div class="slideshow-container" id="aboutSlideshow" style="margin-bottom: 4rem;">
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1200&q=80" alt="Medical team" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Our Dedicated Medical Team</h3>
+          <p>Experienced pediatricians committed to your child's health</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'aboutSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'aboutSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80" alt="Hospital facility" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Modern Healthcare Facility</h3>
+          <p>Equipped with the latest medical technology for accurate diagnostics</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'aboutSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'aboutSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=80" alt="Caring nurse" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Compassionate Care</h3>
+          <p>Treating every child with love, patience, and dedication</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'aboutSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'aboutSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1200&q=80" alt="Happy family" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Families Love Us</h3>
+          <p>Building lasting relationships with families across communities</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'aboutSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'aboutSlideshow')">❯</button>
+      </div>
+      <div class="slide-dots">
+        <span class="dot active" onclick="goToSlide(0, 'aboutSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(1, 'aboutSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(2, 'aboutSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(3, 'aboutSlideshow')"></span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-image animate-fade" style="overflow: hidden; border-radius: 12px;">
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=80" alt="Hospital" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="about-text animate-slide">
+        <h2>Our Story</h2>
+        <p>Chidubem Hospital was founded with a simple yet powerful mission: to provide the highest quality healthcare for children in a warm, welcoming environment. Our name "Chidubem" means "God is with me" in Igbo, reflecting our belief that every child's health is a blessing we honor through dedicated service.</p>
+        <p>Since our establishment, we have grown to become one of the most trusted pediatric healthcare providers in the region. Our state-of-the-art facility combines modern medical technology with a child-friendly atmosphere that puts both children and parents at ease.</p>
+        <p>Our team of highly skilled pediatricians, nurses, and support staff share a common passion: making healthcare accessible, comfortable, and effective for children of all ages.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="stats-banner">
+      <div class="stats-banner-item">
+        <span class="number">15+</span>
+        <span class="label">Years of Excellence</span>
+      </div>
+      <div class="stats-banner-item">
+        <span class="number">50K+</span>
+        <span class="label">Happy Patients</span>
+      </div>
+      <div class="stats-banner-item">
+        <span class="number">30+</span>
+        <span class="label">Expert Doctors</span>
+      </div>
+      <div class="stats-banner-item">
+        <span class="number">98%</span>
+        <span class="label">Satisfaction Rate</span>
+      </div>
+    </div>
+
+    <div class="mission-vision">
+      <div class="mv-card animate-fade">
+        <h3>🎯 Our Mission</h3>
+        <p>To provide exceptional, compassionate pediatric healthcare that nurtures the physical, emotional, and developmental well-being of every child entrusted to our care.</p>
+      </div>
+      <div class="mv-card animate-fade" style="animation-delay: 0.1s;">
+        <h3>👁️ Our Vision</h3>
+        <p>To be the leading pediatric healthcare institution, recognized for medical excellence, innovative care, and unwavering dedication to children's health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="section-title">
+      <h2>Our Core Values</h2>
+      <p>The principles that guide everything we do</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">💝</div>
+        <h3>Compassion</h3>
+        <p>Every child and family is treated with genuine care and understanding.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⭐</div>
+        <h3>Excellence</h3>
+        <p>We strive for the highest standards in medical care and service.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤝</div>
+        <h3>Integrity</h3>
+        <p>Honest, ethical practices in all our interactions with families.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔬</div>
+        <h3>Innovation</h3>
+        <p>Continuously advancing our medical knowledge and technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Meet Our Team</h2>
+      <p>Dedicated professionals committed to your child's health</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👨‍⚕️</div>
+        <h4>Dr. Emmanuel Okonkwo</h4>
+        <p>Chief Pediatrician</p>
+        <span>20+ years experience</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍⚕️</div>
+        <h4>Dr. Amara Nwosu</h4>
+        <p>Pediatric Specialist</p>
+        <span>Emergency Care Expert</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👨‍🔬</div>
+        <h4>Dr. Chukwuemeka Ibe</h4>
+        <p>Pediatric Surgeon</p>
+        <span>15+ years experience</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍💼</div>
+        <h4>Mrs. Ngozi Adeyemi</h4>
+        <p>Hospital Administrator</p>
+        <span>Operations Manager</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Experience Our Care?</h2>
+    <p>Schedule an appointment and let us take care of your little ones.</p>
+    <a href="contact.html" class="btn btn-primary" style="background: white; color: var(--primary);">Book Appointment</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Chidubem Hospital</h3>
+        <p>Providing exceptional pediatric healthcare since 2010.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 123 Healthcare Avenue, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ info@chidubemhospital.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hours</h3>
+        <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
+        <p>Sat: 9:00 AM - 5:00 PM</p>
+        <p>Sun: Emergency Only</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Chidubem Hospital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initSlideshows();
+    });
+  </script>
+</body>
+</html>

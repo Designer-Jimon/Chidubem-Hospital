@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chidubem Hospital - Pediatric Care</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="logo-icon">🏥</div>
+        <div class="logo-text">
+          <h1>Chidubem Hospital</h1>
+          <span>Pediatric Care Center</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard/login.html" class="btn btn-primary">Staff Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text animate-fade">
+        <h1>Caring for <span>Your Child's</span> Health & Happiness</h1>
+        <p>Welcome to Chidubem Hospital, where every child's health is our priority. Our dedicated team of pediatric specialists provides compassionate, comprehensive care for children of all ages.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+          <a href="services.html" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-visual animate-slide">
+        <div class="hero-gallery">
+          <div class="hero-gallery-main" style="position: relative; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80" alt="Doctor" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;" onerror="this.style.opacity='0'">
+            <span class="hero-gallery-overlay">👩‍⚕️ Expert Pediatrician</span>
+          </div>
+          <div class="hero-gallery-small" style="position: relative; overflow: hidden; border-radius: 16px;">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80" alt="Baby" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="hero-gallery-small" style="position: relative; overflow: hidden; border-radius: 16px;">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&q=80" alt="Care" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Our Moments of Care</h2>
+      <p>See the love and dedication we bring to every child's health journey</p>
+    </div>
+    <div class="slideshow-container" id="homeSlideshow">
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80" alt="Doctor with patient" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Expert Pediatric Care</h3>
+          <p>Our dedicated doctors provide the best medical attention for your little ones</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'homeSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'homeSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?w=1200&q=80" alt="Mother and child" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Happy Mothers, Healthy Children</h3>
+          <p>Building trust with families through compassionate care</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'homeSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'homeSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80" alt="Happy family" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Families Trust Us</h3>
+          <p>Thousands of families rely on us for their children's healthcare needs</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'homeSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'homeSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1632053002928-1919605ee6f7?w=1200&q=80" alt="Healthy child" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Healthy Children, Bright Futures</h3>
+          <p>Watch your children thrive with our comprehensive pediatric services</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'homeSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'homeSlideshow')">❯</button>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&q=80" alt="Newborn care" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <div class="slide-overlay">
+          <h3>Special Care for Newborns</h3>
+          <p>From their first breath, we provide gentle, expert care</p>
+        </div>
+        <button class="slide-nav prev" onclick="changeSlide(-1, 'homeSlideshow')">❮</button>
+        <button class="slide-nav next" onclick="changeSlide(1, 'homeSlideshow')">❯</button>
+      </div>
+      <div class="slide-dots">
+        <span class="dot active" onclick="goToSlide(0, 'homeSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(1, 'homeSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(2, 'homeSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(3, 'homeSlideshow')"></span>
+        <span class="dot" onclick="goToSlide(4, 'homeSlideshow')"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Comprehensive healthcare services tailored for your little ones</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate-fade">
+        <div class="service-icon">👶</div>
+        <h3>Child Consultation</h3>
+        <p>Regular check-ups and consultations with our experienced pediatricians to monitor your child's growth and development.</p>
+      </div>
+      <div class="service-card animate-fade" style="animation-delay: 0.1s;">
+        <div class="service-icon">💉</div>
+        <h3>Vaccination</h3>
+        <p>Complete immunization programs following the recommended vaccination schedule to protect your child from diseases.</p>
+      </div>
+      <div class="service-card animate-fade" style="animation-delay: 0.2s;">
+        <div class="service-icon">🔬</div>
+        <h3>Laboratory</h3>
+        <p>State-of-the-art diagnostic laboratory services for accurate and timely test results.</p>
+      </div>
+      <div class="service-card animate-fade" style="animation-delay: 0.3s;">
+        <div class="service-icon">🏥</div>
+        <h3>Pediatric Surgery</h3>
+        <p>Specialized surgical care with gentle, child-friendly approach by our skilled pediatric surgeons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="section-title">
+      <h2>Why Choose Chidubem Hospital?</h2>
+      <p>What sets us apart in pediatric healthcare</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item animate-fade">
+        <div class="feature-icon">👨‍⚕️</div>
+        <h3>Expert Pediatricians</h3>
+        <p>Board-certified pediatric specialists with years of experience in child healthcare.</p>
+      </div>
+      <div class="feature-item animate-fade" style="animation-delay: 0.1s;">
+        <div class="feature-icon">🏠</div>
+        <h3>Child-Friendly Environment</h3>
+        <p>Our hospital is designed to be welcoming and comfortable for children of all ages.</p>
+      </div>
+      <div class="feature-item animate-fade" style="animation-delay: 0.2s;">
+        <div class="feature-icon">⏰</div>
+        <h3>24/7 Emergency Care</h3>
+        <p>Round-the-clock emergency services ready to handle any pediatric emergency.</p>
+      </div>
+      <div class="feature-item animate-fade" style="animation-delay: 0.3s;">
+        <div class="feature-icon">💝</div>
+        <h3>Compassionate Care</h3>
+        <p>We treat every child like our own, with love, patience, and dedication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>What Parents Say</h2>
+      <p>Stories from families we've had the privilege to serve</p>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testimonial-card active">
+        <div class="testimonial-avatar">👶</div>
+        <p>"Chidubem Hospital took wonderful care of my daughter when she was sick. The staff was incredibly kind and patient."</p>
+        <h4>Sarah M.</h4>
+        <span>Mother of Emily, 4 years old</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Need to See a Pediatrician?</h2>
+    <p>Book an appointment today and give your child the care they deserve.</p>
+    <a href="contact.html" class="btn btn-primary" style="background: white; color: var(--primary);">Book Appointment</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Chidubem Hospital</h3>
+        <p>Providing exceptional pediatric healthcare since 2010. Your child's health is our mission.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 123 Healthcare Avenue, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ info@chidubemhospital.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hours</h3>
+        <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
+        <p>Sat: 9:00 AM - 5:00 PM</p>
+        <p>Sun: Emergency Only</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Chidubem Hospital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initSlideshows();
+    });
+  </script>
+</body>
+</html>
